@@ -18,10 +18,12 @@ package com.camnter.easyrecyclerviewsidebar.demo.utils;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.annotation.DrawableRes;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+
+import androidx.annotation.DrawableRes;
+
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.target.SizeReadyCallback;
@@ -54,7 +56,7 @@ public class GlideUtils {
             Glide.with(context)
                  .load(resId)
                  .diskCacheStrategy(DiskCacheStrategy.ALL)
-                 .crossFade()
+//                 .crossFade()
                  .centerCrop()
                  .into(view)
                  .getSize(new SizeReadyCallback() {

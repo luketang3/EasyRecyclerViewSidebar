@@ -15,7 +15,8 @@
  */
 package com.camnter.easyrecyclerviewsidebar.sections;
 
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 /**
  * Description：EasyLetterSection

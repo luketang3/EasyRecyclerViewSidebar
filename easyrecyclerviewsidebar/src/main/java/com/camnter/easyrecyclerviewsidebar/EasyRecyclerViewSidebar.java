@@ -29,14 +29,16 @@ import android.graphics.Shader;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.v4.content.res.ResourcesCompat;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.SparseArray;
 import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
+
+import androidx.annotation.NonNull;
+import androidx.core.content.res.ResourcesCompat;
+
 import com.camnter.easyrecyclerviewsidebar.sections.EasyImageSection;
 import com.camnter.easyrecyclerviewsidebar.sections.EasySection;
 import java.util.ArrayList;

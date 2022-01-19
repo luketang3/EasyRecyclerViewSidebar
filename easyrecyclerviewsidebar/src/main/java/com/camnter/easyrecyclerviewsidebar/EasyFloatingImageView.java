@@ -15,7 +15,6 @@
  */
 package com.camnter.easyrecyclerviewsidebar;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -27,14 +26,15 @@ import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.support.annotation.IntDef;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
-import android.widget.ImageView;
+
+import androidx.annotation.IntDef;
+import androidx.appcompat.widget.AppCompatImageView;
+
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
@@ -43,7 +43,7 @@ import java.lang.annotation.RetentionPolicy;
  * Created by：CaMnter
  * Time：2016-04-11 22:43
  */
-public class EasyFloatingImageView extends ImageView {
+public class EasyFloatingImageView extends AppCompatImageView {
 
     public static final int ROUND = 2601;
     public static final int CIRCLE = 2602;
@@ -86,11 +86,11 @@ public class EasyFloatingImageView extends ImageView {
     }
 
 
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public EasyFloatingImageView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
-        this.init(context, attrs);
-    }
+//    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+//    public EasyFloatingImageView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+//        super(context, attrs, defStyleAttr, defStyleRes);
+//        this.init(context, attrs);
+//    }
 
 
     private void init(Context context, AttributeSet attrs) {

@@ -17,8 +17,10 @@ package com.camnter.easyrecyclerviewsidebar.demo;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.camnter.easyrecyclerview.holder.EasyRecyclerViewHolder;
 import com.camnter.easyrecyclerview.widget.EasyRecyclerView;
 import com.camnter.easyrecyclerview.widget.decorator.EasyDividerItemDecoration;
